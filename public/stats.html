@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stats-style.css">
+</head>
+<body>
+    <div class="transition-overlay">
+        <div class="transition-text">Let's take a walk down memory lane...</div>
+    </div>
+    <div class="page-container">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2985.PNG" alt="Our Memories">
+                <div class="caption">My birthday & meeting seb/misato woohoo</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2984.PNG" alt="Our Memories">
+                <div class="caption">First time texan yeehaw</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2983.PNG" alt="Our Memories">
+                <div class="caption">Saying goodbye at Grand Central (NOT ANYMORE LIRR BABY)</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2982.PNG" alt="Our Memories">
+                <div class="caption">Central park rowboating :o</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2981.PNG" alt="Our Memories">
+                <div class="caption">Not the last time we'll be at Nubiani</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2980.PNG" alt="Our Memories">
+                <div class="caption">me and joker! jkjk <3</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2979.PNG" alt="Our Memories">
+                <div class="caption">post-double date brunch w andrew & paige!</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2978.PNG" alt="Our Memories">
+                <div class="caption">fifth billionth time at this soho uniqlo</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2977.PNG" alt="Our Memories">
+                <div class="caption">Getting big @ Dillon gym :p</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2976.PNG" alt="Our Memories">
+                <div class="caption">Exploring Princeton campus!!</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2975.PNG" alt="Our Memories">
+                <div class="caption">Saying goodbye at Newark :'(</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2974.PNG" alt="Our Memories">
+                <div class="caption">Me & You at House Church Picnic LOL</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2973.PNG" alt="Our Memories">
+                <div class="caption">Hotel @ Princeton!</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="./images/slideshow/IMG_2972.PNG" alt="Our Memories">
+                <div class="caption">Junbi Jail & Matcha Ice Cream c:</div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">❮</a>
+            <a class="next" onclick="changeSlide(1)">❯</a>
+            
+            <!-- Navigation dots -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <img src="./images/plane.svg" alt="Miles Traveled">
+                </div>
+                <div class="stat-number" id="miles">0</div>
+                <div class="stat-label">Miles Traveled</div>
+                <div class="stat-sublabel">for each other</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <img src="./images/heart-stat.svg" alt="Days of Love">
+                </div>
+                <div class="stat-number" id="days">0</div>
+                <div class="stat-label">Days of Love</div>
+                <div class="stat-sublabel">and counting...</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <img src="./images/phone.svg" alt="FaceTime Calls">
+                </div>
+                <div class="stat-number" id="calls">0</div>
+                <div class="stat-label">FaceTime Calls</div>
+                <div class="stat-sublabel">sharing moments together</div>
+            </div>
+        </div>
+    </div>
+    <script src="stats.js"></script>
+</body>
+</html>

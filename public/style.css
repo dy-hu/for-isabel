@@ -2,7 +2,7 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden;
-    cursor: url('./images/pointer.png'), auto;
+    cursor: url('./images/heart-cursor.svg') 16 16, auto;
 }
 
 canvas {
@@ -14,10 +14,10 @@ canvas {
 #valentinesButton {
     display: none;
     position: absolute;
-    background-color: #2d2dff;
-    border: 2px solid #2d2dff;
+    background-color: rgb(255, 105, 180);
+    border: 2px solid rgb(255, 105, 180);
     color: #fff;
-    cursor: pointer;
+    cursor: inherit;
     height: 50px;
     font-size: 16px;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -29,6 +29,6 @@ canvas {
   }
 
   #valentinesButton:hover {
-    background-color: #1f1faa;
-    color: #eee;
+    background-color: rgb(255, 20, 147);
+    color: #fff;
 }
