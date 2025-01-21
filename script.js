@@ -69,12 +69,20 @@ function drawText() {
 
     if(frameNumber < 200){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("In this vast universe filled with countless stars", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["People say hearts pick places", "and how unfortunate it is for me"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("People say hearts pick places and how unfortunate it is for me", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 200 && frameNumber < 400){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("In this vast universe filled with countless stars", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["People say hearts pick places", "and how unfortunate it is for me"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("People say hearts pick places and how unfortunate it is for me", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity - 0.01;
     }
 
@@ -84,18 +92,18 @@ function drawText() {
     if(frameNumber > 450 && frameNumber < 650){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["We are just two tiny specks", "brought together by destiny"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["That mine picked a place", "nearly 1,700 miles away"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         } else {
-            context.fillText("We are just two tiny specks, brought together by destiny", canvas.width/2, canvas.height/2);
+            context.fillText("That mine picked a place nearly 1,700 miles away", canvas.width/2, canvas.height/2);
         }
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 650 && frameNumber < 850){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["We are just two tiny specks", "brought together by destiny"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["That mine picked a place", "nearly 1,700 miles away"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         } else {
-            context.fillText("We are just two tiny specks, brought together by destiny", canvas.width/2, canvas.height/2);
+            context.fillText("That mine picked a place nearly 1,700 miles away", canvas.width/2, canvas.height/2);
         }
         opacity = opacity - 0.01;
     }
@@ -105,12 +113,20 @@ function drawText() {
     }
     if(frameNumber > 900 && frameNumber < 1100){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("I'm thankful to fate (Hinge) for leading me to you", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["But quite frankly it doesn't matter where you were", "the outcome would have all been the same"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("But quite frankly it doesn't matter where you were, the outcome would have all been the same", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1100 && frameNumber < 1300){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("I'm thankful to fate (Hinge) for leading me to you", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["But quite frankly it doesn't matter where you were", "the outcome would have all been the same"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("But quite frankly it doesn't matter where you were, the outcome would have all been the same", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity - 0.01;
     }
 
@@ -119,12 +135,20 @@ function drawText() {
     }
     if(frameNumber > 1350 && frameNumber < 1550){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("And grateful to my lucky stars for bringing you into my life", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["Loving you and having to say goodbye", "is one of the hardest things"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("Loving you and having to say goodbye is one of the hardest things", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1550 && frameNumber < 1750){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("And grateful to my lucky stars for bringing you into my life", canvas.width/2, canvas.height/2);
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["Loving you and having to say goodbye", "is one of the hardest things"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("Loving you and having to say goodbye is one of the hardest things", canvas.width/2, canvas.height/2);
+        }
         opacity = opacity - 0.01;
     }
 
@@ -133,20 +157,12 @@ function drawText() {
     }
     if(frameNumber > 1800 && frameNumber < 2000){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Every day I feel so lucky", "and blessed to have met you"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        } else {
-            context.fillText("Every day I feel so lucky and blessed to have met you", canvas.width/2, canvas.height/2);
-        }
+        context.fillText("I get the fortune of doing with you", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 2000 && frameNumber < 2200){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Every day I feel so lucky", "and blessed to have met you"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        } else {
-            context.fillText("Every day I feel so lucky and blessed to have met you", canvas.width/2, canvas.height/2);
-        }
+        context.fillText("I get the fortune of doing with you", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -155,69 +171,25 @@ function drawText() {
     }
     if(frameNumber > 2250 && frameNumber < 2450){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("I've been thinking...", canvas.width/2, canvas.height/2);
+        context.fillText("I love you more than all the stars", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 2450 && frameNumber < 2650){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("I've been thinking...", canvas.width/2, canvas.height/2);
+        context.fillText("I love you more than all the stars", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
     if(frameNumber == 2700){
         opacity = 0;
     }
-    if(frameNumber > 2700 && frameNumber < 2900){
+    if(frameNumber > 2700){
         context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("About how lucky I am", canvas.width/2, canvas.height/2);
-        opacity = opacity + 0.01;
-    }
-    if(frameNumber >= 2900 && frameNumber < 3100){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("About how lucky I am", canvas.width/2, canvas.height/2);
-        opacity = opacity - 0.01;
-    }
-
-    if(frameNumber == 3150){
-        opacity = 0;
-    }
-    if(frameNumber > 3150 && frameNumber < 3350){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("To have you in my life", canvas.width/2, canvas.height/2);
-        opacity = opacity + 0.01;
-    }
-    if(frameNumber >= 3350 && frameNumber < 3550){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("To have you in my life", canvas.width/2, canvas.height/2);
-        opacity = opacity - 0.01;
-    }
-
-    if(frameNumber == 3600){
-        opacity = 0;
-    }
-    if(frameNumber > 3600 && frameNumber < 3800){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("You make every day brighter", canvas.width/2, canvas.height/2);
-        opacity = opacity + 0.01;
-    }
-    if(frameNumber >= 3800 && frameNumber < 4000){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("You make every day brighter", canvas.width/2, canvas.height/2);
-        opacity = opacity - 0.01;
-    }
-
-    if(frameNumber == 4050){
-        opacity = 0;
-    }
-    if(frameNumber > 4050 && frameNumber < 4250){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("And my heart fuller", canvas.width/2, canvas.height/2);
-        opacity = opacity + 0.01;
-    }
-    if(frameNumber >= 4250 && frameNumber < 4450){
-        context.fillStyle = `rgba(255, 105, 180, ${opacity})`;
-        context.fillText("And my heart fuller", canvas.width/2, canvas.height/2);
-        opacity = opacity - 0.01;
+        context.fillText("Will you be my valentine?", canvas.width/2, canvas.height/2);
+        document.getElementById("valentinesButton").style.display = "block";
+        if(opacity < 1){
+            opacity = opacity + 0.01;
+        }
     }
 
     // Final messages that stay on screen together

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: black;
+    background-color: #FFE4E1;  /* Misty Rose - a light pink color */
     color: #FF69B4;
     min-height: 100vh;
     overflow: hidden;
@@ -35,21 +35,26 @@ body {
 }
 
 .slides img {
-    max-width: 100%;
+    max-width: 105%;  /* Slightly wider than container to crop edges */
     max-height: 60vh;  /* Reduce image height to fit stats below */
-    object-fit: contain;
+    object-fit: cover;  /* Changed from contain to cover */
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    margin-left: -2.5%;  /* Center the wider image */
 }
 
 /* Caption text */
 .caption {
-    color: #FF69B4;
-    font-size: 15px;
+    color: #FF1493;  /* Deep pink for better contrast */
+    font-size: 16px;
+    font-weight: 600;  /* Made text bolder */
     padding: 8px 12px;
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);  /* Light shadow for contrast */
+    background-color: rgba(255, 255, 255, 0.2);  /* Slight background for better readability */
+    border-radius: 8px;
 }
 
 /* Fading animation */
